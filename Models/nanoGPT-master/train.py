@@ -1,3 +1,7 @@
+
+
+
+
 """
 This training script can be run both on a single gpu in debug mode,
 and also in a larger training run with distributed data parallel (ddp).
@@ -20,18 +24,26 @@ import os
 import time
 import math
 import pickle
+import codecarbon
 from contextlib import nullcontext
 
 import numpy as np
 import torch
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.distributed import init_process_group, destroy_process_group
+from codecarbon import track_emissions
+from codecarbon import OfflineEmissionsTracker
 
 from model import GPTConfig, GPT
 
 # -----------------------------------------------------------------------------
 # default config values designed to train a gpt2 (124M) on OpenWebText
 # I/O
+
+##Tracker initialisation
+tracker = OfflineEmissionsTracker(country_iso_code='AUT')
+
+tracker.start()
 out_dir = 'out'
 eval_interval = 2000
 log_interval = 1
@@ -334,3 +346,5 @@ while True:
 
 if ddp:
     destroy_process_group()
+
+tracker.stop()
