@@ -1,0 +1,8 @@
+tinyllama-an-open-source-small-language-model : https://paperswithcode.com/paper/tinyllama-an-open-source-small-language-model
+MedAlpaca: https://arxiv.org/pdf/2304.08247.pdf, https://huggingface.co/medalpaca
+Carbon Footprint of LLMs: https://arxiv.org/pdf/2211.02001.pdf, https://arxiv.org/pdf/2309.14393.pdf
+On XAI for LLMs:  https://arxiv.org/pdf/2402.01761.pdf , https://arxiv.org/pdf/2309.01029.pdf
+“The cost of understanding”, C. Jean-Quartier et al. 2023: https://www.mdpi.com/2079-3197/11/5/92
+https://github.com/prp-e/nucleus
+https://arxiv.org/abs/2009.07118
+https://aclanthology.org/2022.bigscience-1.8/
