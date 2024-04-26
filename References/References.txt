@@ -7,3 +7,7 @@
 7:  https://arxiv.org/abs/2009.07118
 8:  https://aclanthology.org/2022.bigscience-1.8/
 9:  https://github.com/karpathy/nanoGPT
+10: Reference tinyllama chat assistant: https://farmaker47.medium.com/train-a-tiny-llama-model-to-help-on-a-specific-domain-task-9fc877573253
+11: TinyLlamas models pretrained: https://github.com/karpathy/llama2.c#models
+12: Train tinyllama and stable lm2: https://medium.com/@geronimo7/tinyllama-1-1b-and-stable-lm-2-1-6b-cc0051d79be9
+13: Train new dataset on tinyllama video: https://www.youtube.com/watch?v=OVqe6GTrDFM
