@@ -23,9 +23,14 @@ from pytorch_lightning.loggers import WandbLogger
 from lit_gpt import FusedCrossEntropyLoss
 import random
 
+from codecarbon import OfflineEmissionsTracker
+
 model_name = "tiny_LLaMA_1b"
 name = "tinyllama_1b"
 out_dir = Path("out") / name
+
+tracker = OfflineEmissionsTracker(country_iso_code='AUT')
+
 
 # Hyperparameters
 num_of_devices = 8
@@ -108,6 +113,7 @@ def setup(
 
 
 def main(fabric, train_data_dir, val_data_dir, resume):
+    tracker.start()
     monitor = Monitor(fabric, window_size=2, time_unit="seconds", log_iter_interval=log_iter_interval)
 
     if fabric.global_rank == 0:
@@ -160,6 +166,8 @@ def main(fabric, train_data_dir, val_data_dir, resume):
     fabric.print(f"Training time: {(time.perf_counter()-train_time):.2f}s")
     if fabric.device.type == "cuda":
         fabric.print(f"Memory used: {torch.cuda.max_memory_allocated() / 1e9:.02f} GB")
+
+    tracker.stop()
 
 
 def train(fabric, state, train_dataloader, val_dataloader, monitor, resume):
@@ -295,6 +303,7 @@ def validate(fabric: L.Fabric, model: torch.nn.Module, val_dataloader: DataLoade
     out = losses.mean()
 
     model.train()
+
     return out
 
 

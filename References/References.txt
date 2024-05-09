@@ -11,3 +11,6 @@
 11: TinyLlamas models pretrained: https://github.com/karpathy/llama2.c#models
 12: Train tinyllama and stable lm2: https://medium.com/@geronimo7/tinyllama-1-1b-and-stable-lm-2-1-6b-cc0051d79be9
 13: Train new dataset on tinyllama video: https://www.youtube.com/watch?v=OVqe6GTrDFM
+14: unsloth for faster training : https://github.com/unslothai/unsloth
+15: How to use unsloth: https://www.fahdmirza.com/2024/01/train-tinyllama-11b-locally-on-own.html
+16: Train Tinyllama on Taylor Swift Lyrics: https://www.youtube.com/watch?v=3SlpXBvIqNw
