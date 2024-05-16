@@ -26,13 +26,17 @@ import math
 import pickle
 import codecarbon
 from contextlib import nullcontext
+import sys
+import time
 
 import numpy as np
 import torch
+from codecarbon.output import LoggerOutput
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.distributed import init_process_group, destroy_process_group
 from codecarbon import track_emissions
 from codecarbon import OfflineEmissionsTracker
+import logging
 
 from model import GPTConfig, GPT
 
@@ -41,7 +45,35 @@ from model import GPTConfig, GPT
 # I/O
 
 ##Tracker initialisation
+
+
+
 tracker = OfflineEmissionsTracker(country_iso_code='AUT')
+
+logger = logging.getLogger("codecarbon")
+while logger.hasHandlers():
+    logger.removeHandler(logger.handlers[0])
+
+    # Define a log formatter
+formatter = logging.Formatter(
+    "%(asctime)s - %(name)-12s: %(levelname)-8s %(message)s"
+)
+
+
+##Code for logging taken from: https://github.com/mlco2/codecarbon/blob/master/examples/logging_to_file.py
+# Create file handler which logs debug messages
+fh = logging.FileHandler("codecarbon.log")
+fh.setLevel(logging.DEBUG)
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+
+consoleHandler = logging.StreamHandler(sys.stdout)
+consoleHandler.setFormatter(formatter)
+consoleHandler.setLevel(logging.WARNING)
+logger.addHandler(consoleHandler)
+
+
+
 
 tracker.start()
 out_dir = 'out'
@@ -348,3 +380,4 @@ if ddp:
     destroy_process_group()
 
 tracker.stop()
+#_logger = LoggerOutput(_logger, logging.INFO)
