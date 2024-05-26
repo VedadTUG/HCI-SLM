@@ -14,3 +14,5 @@ $ python train.py config/train_shakespeare_char.py --device=cpu --compile=False 
 
 For cuda testing:
 python train.py config/train_shakespeare_char.py --device=cuda --compile=False --eval_iters=50 --log_interval=1 --block_size=256 --batch_size=12 --n_layer=8 --n_head=8 --n_embd=256 --max_iters=60000 --lr_decay_iters=60000 --dropout=0.0
+
+For Data extraction in the file you have to rename the absolute path to your system!
