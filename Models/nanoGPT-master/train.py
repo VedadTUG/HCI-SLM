@@ -62,7 +62,7 @@ formatter = logging.Formatter(
 
 ##Code for logging taken from: https://github.com/mlco2/codecarbon/blob/master/examples/logging_to_file.py
 # Create file handler which logs debug messages
-fh = logging.FileHandler("codecarbon.log")
+fh = logging.FileHandler("../../results/Logging Results/nanoGPT/codecarbon_PLACEHOLDER.log")
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
