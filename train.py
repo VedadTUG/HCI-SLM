@@ -1,19 +1,47 @@
-from codecarbon import EmissionsTracker
+import sys
+
 import torch
-import glob
 import pandas as pd
-import numpy as np
-import re
 from peft import get_peft_model, PeftConfig, PeftModel, LoraConfig, prepare_model_for_kbit_training
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, TrainingArguments, GenerationConfig
 from trl import SFTTrainer
-from datasets import Dataset
+
 import glob
 from codecarbon import OfflineEmissionsTracker
 
 import logging
+import warnings
+
+# Suppress the FutureWarning from huggingface_hub
+warnings.filterwarnings("ignore", message="`resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.")
+
+# Suppress the UserWarning from torch.utils.checkpoint
+warnings.filterwarnings("ignore", message="torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.")
+
 
 tracker = OfflineEmissionsTracker(country_iso_code='AUT')
+
+logger = logging.getLogger("codecarbon")
+while logger.hasHandlers():
+    logger.removeHandler(logger.handlers[0])
+
+    # Define a log formatter
+formatter = logging.Formatter(
+    "%(asctime)s - %(name)-12s: %(levelname)-8s %(message)s"
+)
+
+
+##Code for logging taken from: https://github.com/mlco2/codecarbon/blob/master/examples/logging_to_file.py
+# Create file handler which logs debug messages
+fh = logging.FileHandler("results/Logging Results/tinyllama/codecarbon.log")
+fh.setLevel(logging.DEBUG)
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+
+consoleHandler = logging.StreamHandler(sys.stdout)
+consoleHandler.setFormatter(formatter)
+consoleHandler.setLevel(logging.WARNING)
+logger.addHandler(consoleHandler)
 
 
 def find_csv_files(path, file_extension="*.csv"):
@@ -148,7 +176,7 @@ def load_quantized_model(model_identifier: str, compute_dtype: torch.dtype) -> A
     return model
 
 
-model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+model_name = "unsloth/tinyllama-bnb-4bit"
 model = load_quantized_model(model_name, torch.bfloat16)
 
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
