@@ -217,11 +217,11 @@ per_device_train_batch_size = 3
 gradient_accumulation_steps = 2
 optim = "paged_adamw_32bit"
 save_strategy = "steps"
-save_steps = 50
-logging_steps = 50
+save_steps = 100
+logging_steps = 100
 learning_rate = 2e-3
 max_grad_norm = 0.3
-max_steps = 60000
+max_steps = 30000
 warmup_ratio = 0.03
 lr_scheduler_type = "cosine"
 
