@@ -1,0 +1,88 @@
+2024-06-30 12:14:38,086 - codecarbon  : INFO     Energy consumed for RAM : 0.000012 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:14:38,088 - codecarbon  : INFO     Energy consumed for all GPUs : 0.000618 kWh. Total GPU Power : 148.25921293090084 W
+2024-06-30 12:14:38,088 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000135 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:14:38,088 - codecarbon  : INFO     0.000765 kWh of electricity used since the beginning.
+2024-06-30 12:17:19,910 - codecarbon  : INFO     Energy consumed for RAM : 0.000012 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:17:19,914 - codecarbon  : INFO     Energy consumed for all GPUs : 0.000779 kWh. Total GPU Power : 186.98603646780484 W
+2024-06-30 12:17:19,914 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000135 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:17:19,914 - codecarbon  : INFO     0.000926 kWh of electricity used since the beginning.
+2024-06-30 12:17:34,911 - codecarbon  : INFO     Energy consumed for RAM : 0.000023 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:17:34,913 - codecarbon  : INFO     Energy consumed for all GPUs : 0.001607 kWh. Total GPU Power : 198.57755879360846 W
+2024-06-30 12:17:34,913 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000271 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:17:34,913 - codecarbon  : INFO     0.001901 kWh of electricity used since the beginning.
+2024-06-30 12:17:49,911 - codecarbon  : INFO     Energy consumed for RAM : 0.000035 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:17:49,912 - codecarbon  : INFO     Energy consumed for all GPUs : 0.002427 kWh. Total GPU Power : 197.0372458444826 W
+2024-06-30 12:17:49,913 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000406 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:17:49,913 - codecarbon  : INFO     0.002869 kWh of electricity used since the beginning.
+2024-06-30 12:18:04,911 - codecarbon  : INFO     Energy consumed for RAM : 0.000046 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:18:04,913 - codecarbon  : INFO     Energy consumed for all GPUs : 0.003234 kWh. Total GPU Power : 193.67670233248262 W
+2024-06-30 12:18:04,913 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000542 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:18:04,913 - codecarbon  : INFO     0.003822 kWh of electricity used since the beginning.
+2024-06-30 12:19:28,831 - codecarbon  : INFO     Energy consumed for RAM : 0.000012 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:19:28,832 - codecarbon  : INFO     Energy consumed for all GPUs : 0.000198 kWh. Total GPU Power : 47.43456376511033 W
+2024-06-30 12:19:28,833 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000135 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:19:28,833 - codecarbon  : INFO     0.000345 kWh of electricity used since the beginning.
+2024-06-30 12:19:43,831 - codecarbon  : INFO     Energy consumed for RAM : 0.000023 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:19:43,835 - codecarbon  : INFO     Energy consumed for all GPUs : 0.000381 kWh. Total GPU Power : 43.933073270509574 W
+2024-06-30 12:19:43,836 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000271 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:19:43,836 - codecarbon  : INFO     0.000675 kWh of electricity used since the beginning.
+2024-06-30 12:19:58,831 - codecarbon  : INFO     Energy consumed for RAM : 0.000035 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:19:58,833 - codecarbon  : INFO     Energy consumed for all GPUs : 0.000558 kWh. Total GPU Power : 42.57947202766247 W
+2024-06-30 12:19:58,833 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000406 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:19:58,833 - codecarbon  : INFO     0.000999 kWh of electricity used since the beginning.
+2024-06-30 12:20:13,832 - codecarbon  : INFO     Energy consumed for RAM : 0.000046 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:20:13,833 - codecarbon  : INFO     Energy consumed for all GPUs : 0.000742 kWh. Total GPU Power : 44.10343433430324 W
+2024-06-30 12:20:13,834 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000542 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:20:13,834 - codecarbon  : INFO     0.001330 kWh of electricity used since the beginning.
+2024-06-30 12:20:28,832 - codecarbon  : INFO     Energy consumed for RAM : 0.000058 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:20:28,834 - codecarbon  : INFO     Energy consumed for all GPUs : 0.000921 kWh. Total GPU Power : 42.930115317884166 W
+2024-06-30 12:20:28,834 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000677 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:20:28,834 - codecarbon  : INFO     0.001656 kWh of electricity used since the beginning.
+2024-06-30 12:20:43,833 - codecarbon  : INFO     Energy consumed for RAM : 0.000070 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:20:43,834 - codecarbon  : INFO     Energy consumed for all GPUs : 0.001101 kWh. Total GPU Power : 43.31047813818162 W
+2024-06-30 12:20:43,834 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000813 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:20:43,834 - codecarbon  : INFO     0.001983 kWh of electricity used since the beginning.
+2024-06-30 12:20:58,833 - codecarbon  : INFO     Energy consumed for RAM : 0.000081 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:20:58,835 - codecarbon  : INFO     Energy consumed for all GPUs : 0.001284 kWh. Total GPU Power : 43.88008321957636 W
+2024-06-30 12:20:58,835 - codecarbon  : INFO     Energy consumed for all CPUs : 0.000948 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:20:58,835 - codecarbon  : INFO     0.002313 kWh of electricity used since the beginning.
+2024-06-30 12:21:13,833 - codecarbon  : INFO     Energy consumed for RAM : 0.000093 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:21:13,835 - codecarbon  : INFO     Energy consumed for all GPUs : 0.001461 kWh. Total GPU Power : 42.51908883865994 W
+2024-06-30 12:21:13,835 - codecarbon  : INFO     Energy consumed for all CPUs : 0.001083 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:21:13,835 - codecarbon  : INFO     0.002637 kWh of electricity used since the beginning.
+2024-06-30 12:21:28,834 - codecarbon  : INFO     Energy consumed for RAM : 0.000105 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:21:28,835 - codecarbon  : INFO     Energy consumed for all GPUs : 0.001644 kWh. Total GPU Power : 43.82856140522955 W
+2024-06-30 12:21:28,835 - codecarbon  : INFO     Energy consumed for all CPUs : 0.001219 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:21:28,835 - codecarbon  : INFO     0.002967 kWh of electricity used since the beginning.
+2024-06-30 12:21:43,834 - codecarbon  : INFO     Energy consumed for RAM : 0.000116 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:21:43,835 - codecarbon  : INFO     Energy consumed for all GPUs : 0.001821 kWh. Total GPU Power : 42.500088538469925 W
+2024-06-30 12:21:43,835 - codecarbon  : INFO     Energy consumed for all CPUs : 0.001354 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:21:43,835 - codecarbon  : INFO     0.003291 kWh of electricity used since the beginning.
+2024-06-30 12:21:58,834 - codecarbon  : INFO     Energy consumed for RAM : 0.000128 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:21:58,839 - codecarbon  : INFO     Energy consumed for all GPUs : 0.002003 kWh. Total GPU Power : 43.840919279100795 W
+2024-06-30 12:21:58,839 - codecarbon  : INFO     Energy consumed for all CPUs : 0.001490 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:21:58,839 - codecarbon  : INFO     0.003621 kWh of electricity used since the beginning.
+2024-06-30 12:22:13,835 - codecarbon  : INFO     Energy consumed for RAM : 0.000139 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:22:13,836 - codecarbon  : INFO     Energy consumed for all GPUs : 0.002185 kWh. Total GPU Power : 43.50028238434332 W
+2024-06-30 12:22:13,836 - codecarbon  : INFO     Energy consumed for all CPUs : 0.001625 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:22:13,836 - codecarbon  : INFO     0.003949 kWh of electricity used since the beginning.
+2024-06-30 12:22:28,835 - codecarbon  : INFO     Energy consumed for RAM : 0.000151 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:22:28,836 - codecarbon  : INFO     Energy consumed for all GPUs : 0.002363 kWh. Total GPU Power : 42.76457412559364 W
+2024-06-30 12:22:28,836 - codecarbon  : INFO     Energy consumed for all CPUs : 0.001760 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:22:28,836 - codecarbon  : INFO     0.004274 kWh of electricity used since the beginning.
+2024-06-30 12:22:43,835 - codecarbon  : INFO     Energy consumed for RAM : 0.000163 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:22:43,836 - codecarbon  : INFO     Energy consumed for all GPUs : 0.002553 kWh. Total GPU Power : 45.71553507487133 W
+2024-06-30 12:22:43,837 - codecarbon  : INFO     Energy consumed for all CPUs : 0.001896 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:22:43,837 - codecarbon  : INFO     0.004612 kWh of electricity used since the beginning.
+2024-06-30 12:22:58,836 - codecarbon  : INFO     Energy consumed for RAM : 0.000174 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:22:58,837 - codecarbon  : INFO     Energy consumed for all GPUs : 0.002738 kWh. Total GPU Power : 44.34828336803095 W
+2024-06-30 12:22:58,837 - codecarbon  : INFO     Energy consumed for all CPUs : 0.002031 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:22:58,837 - codecarbon  : INFO     0.004944 kWh of electricity used since the beginning.
+2024-06-30 12:23:13,836 - codecarbon  : INFO     Energy consumed for RAM : 0.000186 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:23:13,838 - codecarbon  : INFO     Energy consumed for all GPUs : 0.002915 kWh. Total GPU Power : 42.48063197524136 W
+2024-06-30 12:23:13,838 - codecarbon  : INFO     Energy consumed for all CPUs : 0.002167 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:23:13,838 - codecarbon  : INFO     0.005268 kWh of electricity used since the beginning.
+2024-06-30 12:23:19,830 - codecarbon  : INFO     Energy consumed for RAM : 0.000190 kWh. RAM Power : 2.7869911193847656 W
+2024-06-30 12:23:19,831 - codecarbon  : INFO     Energy consumed for all GPUs : 0.002986 kWh. Total GPU Power : 42.869694047489915 W
+2024-06-30 12:23:19,831 - codecarbon  : INFO     Energy consumed for all CPUs : 0.002221 kWh. Total CPU Power : 32.5 W
+2024-06-30 12:23:19,831 - codecarbon  : INFO     0.005398 kWh of electricity used since the beginning.
