@@ -7,6 +7,41 @@ from contextlib import nullcontext
 import torch
 import tiktoken
 from model import GPTConfig, GPT
+from codecarbon import OfflineEmissionsTracker
+import logging
+import sys
+import time
+
+
+
+tracker = OfflineEmissionsTracker(country_iso_code='AUT')
+
+logger = logging.getLogger("codecarbon")
+while logger.hasHandlers():
+    logger.removeHandler(logger.handlers[0])
+
+    # Define a log formatter
+formatter = logging.Formatter(
+    "%(asctime)s - %(name)-12s: %(levelname)-8s %(message)s"
+)
+
+
+##Code for logging taken from: https://github.com/mlco2/codecarbon/blob/master/examples/logging_to_file.py
+# Create file handler which logs debug messages
+fh = logging.FileHandler("../../results/Logging Results/nanoGPT/codecarbon_SAMPLE_PLACEHOLDER.log")
+fh.setLevel(logging.DEBUG)
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+
+consoleHandler = logging.StreamHandler(sys.stdout)
+consoleHandler.setFormatter(formatter)
+consoleHandler.setLevel(logging.WARNING)
+logger.addHandler(consoleHandler)
+
+
+
+
+tracker.start()
 
 # -----------------------------------------------------------------------------
 init_from = 'resume' # either 'resume' (from an out_dir) or a gpt2 variant (e.g. 'gpt2-xl')
@@ -87,3 +122,5 @@ with torch.no_grad():
             y = model.generate(x, max_new_tokens, temperature=temperature, top_k=top_k)
             print(decode(y[0].tolist()))
             print('---------------')
+
+tracker.stop()
