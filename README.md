@@ -17,4 +17,4 @@ See [instructions.txt](instructions.txt).
 Publication in preparation
 
 ## Further information
-We'd like to encourage using and also contributing to (S)LM Benchmarks with a focus on sustainability such as instructions.txt](SLM-Bench)(https://github.com/slm-bench/slm-bench-experiments).
+We'd like to encourage using and also contributing to (S)LM Benchmarks with a focus on sustainability such as [SLM-Bench](https://github.com/slm-bench/slm-bench-experiments).
